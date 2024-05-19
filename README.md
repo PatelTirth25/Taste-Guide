@@ -29,8 +29,8 @@ Make sure you have the following installed on your machine:
 1. Clone the repository :
 
    ```bash
-   git clone https://github.com/your-username/taste-guide.git
-   cd taste-guide
+   git clone https://github.com/PatelTirth25/Taste-Guide.git
+   cd Taste-Guide
 2. Install dependencies for the frontend :
 
     ```bash
