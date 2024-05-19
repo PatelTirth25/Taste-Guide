@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Taste-Guide
+
+Taste-Guide is a personal recipe and meal manager that allows you to store, manage, and delete your own recipes and meals after logging in or signing up. The frontend is built with Next.js, and the backend is powered by Node.js with MongoDB as the database.
+
+## Features
+
+- **User Authentication**: Sign up and log in to manage your recipes and meals.
+- **Recipe and Meal Management**: Store and delete your own recipes and meals.
+- **Personalized Data**: Only you can see and manage your recipes and meals.
+
+## Technologies Used
+
+- **Frontend**: Next.js
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Make sure you have the following installed on your machine:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js
+- npm or yarn
+- MongoDB
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository :
 
-## Learn More
+   ```bash
+   git clone https://github.com/your-username/taste-guide.git
+   cd taste-guide
+2. Install dependencies for the frontend :
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    npm install
+    # or
+    yarn install
+3. Install dependencies for the backend :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```bash
+    cd ./backend
+    npm install
+    # or
+    yarn install
+### Configuration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+ **Set up MongoDB**:
+   - Ensure your MongoDB server is running.
+   - Update the MongoDB connection string in the backend configuration.
 
-## Deploy on Vercel
+   In `/backend/routes`, change URI in `.env` file and add your MongoDB connection string:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    URI='your-mongodb-connection-string'
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Running the Project
+
+1. **Start the backend server**:
+    - Navigate to the `Taste-Guide/backend/routes` directory.
+    - Start the server using `nodemon main.js`.
+
+The backend server will start on `http://localhost:8080`.
+
+2. **Start the frontend server**:
+    - Navigate back to `Taste-Guide/` directory.
+    - Start the server using `npm run dev` or `yarn dev`.
+
+The frontend server will start on `http://localhost:3000`.
+
+# **Happy cooking! 🍽️👩‍🍳👨‍🍳**
+
